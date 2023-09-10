@@ -1,0 +1,526 @@
+{
+  "RootName": "DataModels",
+  "CTVER": "43543330",
+  "TableCount": 7,
+  "Count": 1,
+  "items": [{
+    "ID": 2,
+    "Name": "模型2",
+    "CreateDate": "2023/9/9 0:19:35",
+    "OrderNo": 1,
+    "Tables": {
+      "Count": 7,
+      "items": [
+        {
+          "ID": 1,
+          "Name": "clubs",
+          "Caption": "俱乐部",
+          "CreateDate": "2023/9/9 0:19:39",
+          "OrderNo": 1,
+          "GraphDesc": "Left=203.00\r\nTop=13.00\r\nBLeft=101.50\r\nBTop=6.50",
+          "MetaFields": {
+            "Count": 8,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "Id",
+                "OrderNo": 1,
+                "DisplayName": "编号",
+                "DataType": 1,
+                "GraphDesc": "P1=569.00,164.00\r\nP2=486.00,164.00\r\nP3=486.00,164.00\r\nP4=403.00,164.00\r\nHookP1=20.00,108.00\r\nHookP2=198.00,75.00\r\nMod_OP1=1\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=1\r\nHorz2=1"
+              },
+              {
+                "ID": 2,
+                "Name": "name",
+                "OrderNo": 2,
+                "DisplayName": "名称",
+                "DataType": 1
+              },
+              {
+                "ID": 3,
+                "Name": "province",
+                "OrderNo": 3,
+                "DisplayName": "省",
+                "DataType": 1
+              },
+              {
+                "ID": 6,
+                "Name": "city",
+                "OrderNo": 4,
+                "DisplayName": "市",
+                "DataType": 1
+              },
+              {
+                "ID": 7,
+                "Name": "area",
+                "OrderNo": 5,
+                "DisplayName": "区/县",
+                "DataType": 1
+              },
+              {
+                "ID": 8,
+                "Name": "CreatorName",
+                "OrderNo": 6,
+                "DisplayName": "创建人姓名",
+                "DataType": 1
+              },
+              {
+                "ID": 9,
+                "Name": "create_time",
+                "Memo": "默认为当前时间",
+                "OrderNo": 7,
+                "DisplayName": "创建日期",
+                "DataType": 4,
+                "DefaultValue": "sysdate"
+              },
+              {
+                "ID": 12,
+                "Name": "update_time",
+                "OrderNo": 8,
+                "DisplayName": "修改日期",
+                "DataType": 4
+              }
+            ]
+          }
+        },
+        {
+          "ID": 2,
+          "Name": "players",
+          "Caption": "棋手",
+          "CreateDate": "2023/9/9 0:24:36",
+          "OrderNo": 2,
+          "GraphDesc": "Left=1121.00\r\nTop=-2.00\r\nBLeft=560.50\r\nBTop=-1.00",
+          "MetaFields": {
+            "Count": 11,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "Id",
+                "OrderNo": 1,
+                "DisplayName": "编号",
+                "DataType": 2,
+                "KeyFieldType": 1
+              },
+              {
+                "ID": 2,
+                "Name": "name",
+                "OrderNo": 2,
+                "DisplayName": "棋手姓名",
+                "DataType": 2
+              },
+              {
+                "ID": 3,
+                "Name": "phone_number",
+                "OrderNo": 3,
+                "DisplayName": "手机号",
+                "DataType": 2
+              },
+              {
+                "ID": 8,
+                "Name": "email",
+                "OrderNo": 4,
+                "DisplayName": "邮箱",
+                "DataType": 1
+              },
+              {
+                "ID": 4,
+                "Name": "province",
+                "OrderNo": 5,
+                "DisplayName": "省",
+                "DataType": 1
+              },
+              {
+                "ID": 5,
+                "Name": "city",
+                "OrderNo": 6,
+                "DisplayName": "市",
+                "DataType": 1
+              },
+              {
+                "ID": 6,
+                "Name": "area",
+                "OrderNo": 7,
+                "DisplayName": "区/县",
+                "DataType": 1
+              },
+              {
+                "ID": 7,
+                "Name": "members_id",
+                "OrderNo": 8,
+                "DisplayName": "会员id",
+                "DataType": 2,
+                "KeyFieldType": 3
+              },
+              {
+                "ID": 11,
+                "Name": "order_no",
+                "OrderNo": 9,
+                "DisplayName": "排名",
+                "DataType": 2
+              },
+              {
+                "ID": 9,
+                "Name": "create_time",
+                "OrderNo": 10,
+                "DisplayName": "创建日期",
+                "DataType": 4,
+                "DefaultValue": "sysdate"
+              },
+              {
+                "ID": 10,
+                "Name": "update_time",
+                "OrderNo": 11,
+                "DisplayName": "修改日期",
+                "DataType": 4
+              }
+            ]
+          }
+        },
+        {
+          "ID": 2,
+          "Name": "members",
+          "Caption": "会员",
+          "CreateDate": "2023/9/9 0:24:36",
+          "OrderNo": 3,
+          "GraphDesc": "Left=606.00\r\nTop=-13.00\r\nBLeft=303.00\r\nBTop=-6.50",
+          "MetaFields": {
+            "Count": 11,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "Id",
+                "OrderNo": 1,
+                "DisplayName": "编号",
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "RelateTable": "players",
+                "RelateField": "members_id",
+                "GraphDesc": "P1=1121.00,98.00\r\nP2=966.00,98.00\r\nP3=966.00,98.00\r\nP4=810.00,98.00\r\nHookP1=20.00,100.00\r\nHookP2=184.00,111.00\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=1\r\nHorz2=1"
+              },
+              {
+                "ID": 2,
+                "Name": "name",
+                "OrderNo": 2,
+                "DisplayName": "会员姓名",
+                "DataType": 2
+              },
+              {
+                "ID": 3,
+                "Name": "phone_number",
+                "OrderNo": 3,
+                "DisplayName": "手机号",
+                "DataType": 2
+              },
+              {
+                "ID": 8,
+                "Name": "email",
+                "OrderNo": 4,
+                "DisplayName": "邮箱",
+                "DataType": 1
+              },
+              {
+                "ID": 4,
+                "Name": "province",
+                "OrderNo": 5,
+                "DisplayName": "省",
+                "DataType": 1,
+                "DataLength": 255
+              },
+              {
+                "ID": 5,
+                "Name": "city",
+                "OrderNo": 6,
+                "DisplayName": "市",
+                "DataType": 1
+              },
+              {
+                "ID": 6,
+                "Name": "area",
+                "OrderNo": 7,
+                "DisplayName": "区/县",
+                "DataType": 1
+              },
+              {
+                "ID": 7,
+                "Name": "clubs_id",
+                "OrderNo": 8,
+                "DisplayName": "俱乐部id",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "clubs",
+                "RelateField": "Id",
+                "GraphDesc": "P1=400.00,88.00\r\nP2=503.00,88.00\r\nP3=503.00,88.00\r\nP4=606.00,88.00\r\nHookP1=177.00,75.00\r\nHookP2=28.00,101.00\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=1\r\nHorz2=1"
+              },
+              {
+                "ID": 11,
+                "Name": "order_no",
+                "OrderNo": 9,
+                "DisplayName": "排名",
+                "DataType": 2
+              },
+              {
+                "ID": 9,
+                "Name": "create_time",
+                "OrderNo": 10,
+                "DisplayName": "创建日期",
+                "DataType": 4,
+                "DefaultValue": "sysdate"
+              },
+              {
+                "ID": 10,
+                "Name": "update_time",
+                "OrderNo": 11,
+                "DisplayName": "修改日期",
+                "DataType": 4
+              }
+            ]
+          }
+        },
+        {
+          "ID": 5,
+          "Name": "tournaments",
+          "Caption": "锦标赛",
+          "CreateDate": "2023/9/9 1:14:06",
+          "OrderNo": 4,
+          "GraphDesc": "Left=477.00\r\nTop=379.00\r\nBLeft=238.50\r\nBTop=189.50",
+          "MetaFields": {
+            "Count": 7,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "Id",
+                "OrderNo": 1,
+                "DisplayName": "编号",
+                "DataType": 1,
+                "KeyFieldType": 1
+              },
+              {
+                "ID": 2,
+                "Name": "name",
+                "OrderNo": 2,
+                "DisplayName": "名称",
+                "DataType": 1
+              },
+              {
+                "ID": 3,
+                "Name": "clubs_id",
+                "OrderNo": 3,
+                "DisplayName": "俱乐部id",
+                "DataType": 1,
+                "KeyFieldType": 3,
+                "RelateTable": "clubs",
+                "RelateField": "Id",
+                "GraphDesc": "P1=372.00,163.00\r\nP2=372.00,399.00\r\nP3=372.00,399.00\r\nP4=477.00,399.00\r\nHookP1=169.00,122.00\r\nHookP2=20.00,20.00\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=0\r\nHorz2=1"
+              },
+              {
+                "ID": 4,
+                "Name": "start_date",
+                "OrderNo": 4,
+                "DisplayName": "开始日期",
+                "DataType": 4
+              },
+              {
+                "ID": 5,
+                "Name": "end_date",
+                "OrderNo": 5,
+                "DisplayName": "结束日期",
+                "DataType": 4
+              },
+              {
+                "ID": 9,
+                "Name": "create_time",
+                "Memo": "默认为当前时间",
+                "OrderNo": 6,
+                "DisplayName": "创建日期",
+                "DataType": 4,
+                "DefaultValue": "sysdate"
+              },
+              {
+                "ID": 10,
+                "Name": "update_time",
+                "OrderNo": 7,
+                "DisplayName": "修改日期",
+                "DataType": 4
+              }
+            ]
+          }
+        },
+        {
+          "ID": 6,
+          "Name": "tournaments_sponsor",
+          "Caption": "锦标赛赞助方关联表",
+          "CreateDate": "2023/9/9 1:20:20",
+          "OrderNo": 5,
+          "GraphDesc": "Left=533.00\r\nTop=605.00\r\nBLeft=266.50\r\nBTop=302.50",
+          "MetaFields": {
+            "Count": 5,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "Id",
+                "OrderNo": 1,
+                "DisplayName": "编号",
+                "DataType": 2,
+                "KeyFieldType": 1
+              },
+              {
+                "ID": 2,
+                "Name": "tournaments_id",
+                "OrderNo": 2,
+                "DisplayName": "锦标赛id",
+                "DataType": 1,
+                "KeyFieldType": 3,
+                "RelateTable": "tournaments",
+                "RelateField": "Id",
+                "GraphDesc": "P1=614.00,513.00\r\nP2=614.00,559.00\r\nP3=614.00,559.00\r\nP4=614.00,605.00\r\nHookP1=137.00,106.00\r\nHookP2=81.00,20.00\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=0\r\nHorz2=0"
+              },
+              {
+                "ID": 3,
+                "Name": "sponsor_id",
+                "OrderNo": 3,
+                "DisplayName": "赞助方id",
+                "DataType": 1,
+                "KeyFieldType": 3
+              },
+              {
+                "ID": 9,
+                "Name": "create_time",
+                "Memo": "默认为当前时间",
+                "OrderNo": 4,
+                "DisplayName": "创建日期",
+                "DataType": 4,
+                "DefaultValue": "sysdate"
+              },
+              {
+                "ID": 10,
+                "Name": "update_time",
+                "OrderNo": 5,
+                "DisplayName": "修改时间",
+                "DataType": 4
+              }
+            ]
+          }
+        },
+        {
+          "ID": 7,
+          "Name": "matches",
+          "Caption": "比赛",
+          "CreateDate": "2023/9/9 1:25:18",
+          "OrderNo": 6,
+          "GraphDesc": "Left=823.00\r\nTop=245.00\r\nBLeft=411.50\r\nBTop=122.50",
+          "MetaFields": {
+            "Count": 6,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "Id",
+                "OrderNo": 1,
+                "DisplayName": "编号",
+                "DataType": 1,
+                "KeyFieldType": 1
+              },
+              {
+                "ID": 2,
+                "Name": "name",
+                "OrderNo": 2,
+                "DisplayName": "名称",
+                "DataType": 1
+              },
+              {
+                "ID": 3,
+                "Name": "tournaments_id",
+                "OrderNo": 3,
+                "DisplayName": "锦标赛id",
+                "DataType": 1,
+                "KeyFieldType": 1
+              },
+              {
+                "ID": 6,
+                "Name": "players_id",
+                "OrderNo": 4,
+                "DisplayName": "棋手id",
+                "DataType": 1,
+                "KeyFieldType": 1
+              },
+              {
+                "ID": 9,
+                "Name": "create_time",
+                "Memo": "默认为当前时间",
+                "OrderNo": 5,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "DefaultValue": "sysdate"
+              },
+              {
+                "ID": 10,
+                "Name": "update_time",
+                "OrderNo": 6,
+                "DisplayName": "修改时间",
+                "DataType": 4
+              }
+            ]
+          }
+        },
+        {
+          "ID": 6,
+          "Name": "tournaments_players",
+          "Caption": "锦标赛棋手关联表",
+          "CreateDate": "2023/9/9 1:20:20",
+          "OrderNo": 7,
+          "GraphDesc": "Left=1074.00\r\nTop=444.00\r\nBLeft=537.00\r\nBTop=222.00",
+          "MetaFields": {
+            "Count": 5,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "Id",
+                "OrderNo": 1,
+                "DisplayName": "编号",
+                "DataType": 2,
+                "KeyFieldType": 1
+              },
+              {
+                "ID": 2,
+                "Name": "tournaments_id",
+                "OrderNo": 2,
+                "DisplayName": "锦标赛id",
+                "DataType": 1,
+                "KeyFieldType": 3,
+                "RelateTable": "tournaments",
+                "RelateField": "Id",
+                "GraphDesc": "P1=695.00,478.00\r\nP2=884.00,478.00\r\nP3=884.00,478.00\r\nP4=1074.00,478.00\r\nHookP1=182.00,99.00\r\nHookP2=28.00,34.00\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=1\r\nHorz2=1"
+              },
+              {
+                "ID": 3,
+                "Name": "players_id",
+                "OrderNo": 3,
+                "DisplayName": "棋手id",
+                "DataType": 1,
+                "KeyFieldType": 3,
+                "RelateTable": "players",
+                "RelateField": "Id",
+                "GraphDesc": "P1=1218.00,196.00\r\nP2=1218.00,320.00\r\nP3=1218.00,320.00\r\nP4=1218.00,444.00\r\nHookP1=97.00,170.00\r\nHookP2=144.00,20.00\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=0\r\nHorz2=0"
+              },
+              {
+                "ID": 9,
+                "Name": "create_time",
+                "Memo": "默认为当前时间",
+                "OrderNo": 4,
+                "DisplayName": "创建日期",
+                "DataType": 4,
+                "DefaultValue": "sysdate"
+              },
+              {
+                "ID": 10,
+                "Name": "update_time",
+                "OrderNo": 5,
+                "DisplayName": "修改时间",
+                "DataType": 4
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }]
+}
